@@ -34,4 +34,14 @@ class Room
     end
   end
 
+  def room_has_guest_fave_song(song)
+    for songs in @song_book
+      if songs == song
+        return "Yaldy!"
+      else
+        return "I'm signing #{song}"
+      end
+    end 
+  end
+
 end
